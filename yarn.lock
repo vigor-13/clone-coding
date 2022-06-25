@@ -650,6 +650,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@clone-coding/root@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@clone-coding/root@workspace:."
+  dependencies:
+    "@changesets/cli": ^2.23.0
+    "@commitlint/cli": ^17.0.2
+    "@commitlint/config-conventional": ^17.0.2
+    "@manypkg/cli": ^0.19.1
+    "@types/jest": ^28.1.1
+    "@typescript-eslint/eslint-plugin": latest
+    "@typescript-eslint/parser": latest
+    eslint: ^8.17.0
+    eslint-config-airbnb: ^19.0.4
+    eslint-config-airbnb-typescript: ^17.0.0
+    eslint-config-prettier: ^8.5.0
+    eslint-plugin-import: ^2.26.0
+    eslint-plugin-jsx-a11y: ^6.5.1
+    eslint-plugin-react: ^7.30.0
+    eslint-plugin-react-hooks: ^4.5.0
+    husky: ^8.0.1
+    jest: ^28.1.1
+    prettier: ^2.6.2
+    rimraf: ^3.0.2
+    ts-jest: ^28.0.4
+    typescript: ^4.7.3
+  languageName: unknown
+  linkType: soft
+
 "@commitlint/cli@npm:^17.0.2":
   version: 17.0.2
   resolution: "@commitlint/cli@npm:17.0.2"
@@ -1253,34 +1281,6 @@ __metadata:
   checksum: f5a756e5a659e0e1c33f48852d56826d170d5b10a3cdea89ce4fcaa77678d8799aa4004b30e1985c87b73dbc390b95bb6411b78336dd1e0db87c08c74b5c0e74
   languageName: node
   linkType: hard
-
-"@monorepo-boilerplate/root@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@monorepo-boilerplate/root@workspace:."
-  dependencies:
-    "@changesets/cli": ^2.23.0
-    "@commitlint/cli": ^17.0.2
-    "@commitlint/config-conventional": ^17.0.2
-    "@manypkg/cli": ^0.19.1
-    "@types/jest": ^28.1.1
-    "@typescript-eslint/eslint-plugin": latest
-    "@typescript-eslint/parser": latest
-    eslint: ^8.17.0
-    eslint-config-airbnb: ^19.0.4
-    eslint-config-airbnb-typescript: ^17.0.0
-    eslint-config-prettier: ^8.5.0
-    eslint-plugin-import: ^2.26.0
-    eslint-plugin-jsx-a11y: ^6.5.1
-    eslint-plugin-react: ^7.30.0
-    eslint-plugin-react-hooks: ^4.5.0
-    husky: ^8.0.1
-    jest: ^28.1.1
-    prettier: ^2.6.2
-    rimraf: ^3.0.2
-    ts-jest: ^28.0.4
-    typescript: ^4.7.3
-  languageName: unknown
-  linkType: soft
 
 "@mrmlnc/readdir-enhanced@npm:^2.2.1":
   version: 2.2.1
