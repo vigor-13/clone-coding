@@ -19,11 +19,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@clone-coding/root",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "@clone-coding/games",\
+        "reference": "workspace:packages/games"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@clone-coding/games", ["workspace:packages/games"]],\
       ["@clone-coding/root", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -1083,6 +1088,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:1.19.1"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@clone-coding/games", [\
+        ["workspace:packages/games", {\
+          "packageLocation": "./packages/games/",\
+          "packageDependencies": [\
+            ["@clone-coding/games", "workspace:packages/games"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["@clone-coding/root", [\

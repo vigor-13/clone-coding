@@ -650,6 +650,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@clone-coding/games@workspace:packages/games":
+  version: 0.0.0-use.local
+  resolution: "@clone-coding/games@workspace:packages/games"
+  languageName: unknown
+  linkType: soft
+
 "@clone-coding/root@workspace:.":
   version: 0.0.0-use.local
   resolution: "@clone-coding/root@workspace:."
