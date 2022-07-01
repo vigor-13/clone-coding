@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import ora from 'ora';
 
 export interface PostsProps {
   postId?: string;
@@ -13,11 +14,20 @@ export const posts = (props: PostsProps) => {
 
   if (postId) url += `/${postId}`;
 
+  const spinner = ora('Request to server...').start();
   return fetch(url).then(async (response: any) => {
     const data = await response.json();
+    spinner.succeed('DONE');
 
-    if (options && options.pretty) return console.info(data);
+    if (options && options.pretty) {
+      spinner.text = `RESULT: \n${JSON.stringify(data, null, 2)}`;
+      spinner.info();
+      spinner.stop();
+      return;
+    }
 
-    return console.info(JSON.stringify(data));
+    spinner.text = `RESULT: \n${JSON.stringify(data)}`;
+    spinner.info();
+    spinner.stop();
   });
 };
