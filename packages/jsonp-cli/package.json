@@ -6,12 +6,12 @@
     "jsonp": "dist/bundle.js"
   },
   "scripts": {
-    "dev": "ts-node src/index.ts",
+    "dev": "node dist/bundle.js",
     "build": "webpack --config ./webpack.config.js"
   },
   "dependencies": {
     "commander": "^9.3.0",
-    "node-fetch": "2"
+    "node-fetch": "^3.2.6"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",

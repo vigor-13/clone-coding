@@ -9,7 +9,6 @@ export interface PostsProps {
 
 export const posts = (props: PostsProps) => {
   const { postId, options } = props;
-  console.log(props);
   let url = 'https://jsonplaceholder.typicode.com/posts';
 
   if (postId) url += `/${postId}`;
@@ -17,8 +16,8 @@ export const posts = (props: PostsProps) => {
   return fetch(url).then(async (response: any) => {
     const data = await response.json();
 
-    if (options && options.pretty) return console.log(data);
+    if (options && options.pretty) return console.info(data);
 
-    return console.log(JSON.stringify(data));
+    return console.info(JSON.stringify(data));
   });
 };
