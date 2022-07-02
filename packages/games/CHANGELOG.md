@@ -1,7 +1,7 @@
 # @clone-coding/games
 
-## 0.2.0
+## 1.0.0
 
-### Minor Changes
+### Major Changes
 
 - Add breakout game
